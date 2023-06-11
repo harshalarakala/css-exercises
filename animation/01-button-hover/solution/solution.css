@@ -18,8 +18,6 @@ button {
   text-align: center;
 }
 
-/* SOLUTION */
-
 button {
   transition: transform .3s ease-in-out;
 }
