@@ -4,6 +4,10 @@ html, body {
   height: 100%;
 }
 
+.text{
+  font-weight: 200;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -33,6 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  min-width: 42px;
 }
 
 .close-button {
@@ -48,12 +54,15 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  min-width: 24px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 button.continue {
@@ -66,4 +75,31 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.head{
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  margin: 10px;
+  align-items:start;
+}
+
+.header{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
